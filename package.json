@@ -23,7 +23,8 @@
         "less": "^3.0.4",
         "less-loader": "^4.1.0",
         "vue-template-compiler": "^2.5.21",
-        "vant": "^1.6.11"
+        "vant": "^1.6.11",
+        "style-resources-loader": "^1.2.1"
     },
     "eslintConfig": {
         "root": true,
