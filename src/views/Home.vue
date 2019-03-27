@@ -36,6 +36,8 @@ export default {
       axios.get("http://api.xuandan.com/DataApi/PyqGoods?AppKey=tehahusnxb&type=2").then(res=>{
        console.log(res.data)
      })
+// 修改
+
   }
   //路由退出时候调用
   //beforeRouteLeave(to, from, next){next()}
