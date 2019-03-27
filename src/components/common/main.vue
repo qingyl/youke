@@ -1,11 +1,8 @@
 <template>
-  <div class="home">
-    <Tabbar></Tabbar>
-  </div>
+  <div class></div>
 </template>
 
 <script type="text/ecmascript-6">
-import { PyqGoods } from "@/api";
 export default {
   //接收父级传递的参数
   props: [],
@@ -17,19 +14,13 @@ export default {
   //实例初始化之前触发事件
   beforeCreate() {},
   //实例化之后触发事件
-  created() {
-    this.getList();
-  },
+  created() {},
   //实时监控data参数数据变化
   computed: {},
   //模板组件
   components: {},
   //执行方法
-  methods: {
-    getList() {
-      PyqGoods();
-    }
-  },
+  methods: {},
   mounted() {}
   //路由退出时候调用
   //beforeRouteLeave(to, from, next){next()}

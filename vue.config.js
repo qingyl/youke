@@ -19,20 +19,21 @@ module.exports = {
   productionSourceMap: false, //build 打包去除source map
   crossorigin: undefined,
   integrity: false,
-  configureWebpack: config => {
+  configureWebpack: () => {
+    //返回config
     if (process.env.NODE_ENV === "production") {
       // 为生产环境修改配置...
     } else {
       // eslint-disable-next-line no-console
-      // console.log(config);
       // 为开发环境修改配置...
     }
   },
   chainWebpack: config => {
     //配置相对路径方式
-    config.resolve.alias.set("@", resolve("src"));
+    config.resolve.alias
+      .set("@", resolve("src"))
+      .set("components", resolve("src/components"));
     // .set("assets", resolve("src/assets"))
-    // .set("components", resolve("src/components"))
     // .set("static", resolve("src/static"));
   },
   css: {
@@ -60,17 +61,17 @@ module.exports = {
   },
   devServer: {
     host: ip,
-    port: `8089`
+    port: `8089`,
     // 代理链接配置
-    // proxy: {
-    // "/": {
-    //   target: "",
-    //   changeOrigin: true,
-    //   pathRewrite: {
-    //     "^/api": ""
-    //   }
-    // }
-    //}
+    proxy: {
+      "/": {
+        target: "http://api.xuandan.com/DataApi/",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/api": ""
+        }
+      }
+    }
   },
   parallel: require("os").cpus().length > 1,
   // 向 PWA 插件传递选项
