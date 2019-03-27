@@ -6,6 +6,7 @@
 
 <script type="text/ecmascript-6">
 import { PyqGoods } from "@/api";
+import axios from 'axios'
 export default {
   //接收父级传递的参数
   props: [],
@@ -27,10 +28,15 @@ export default {
   //执行方法
   methods: {
     getList() {
-      PyqGoods();
+      // PyqGoods();
+     
     }
   },
-  mounted() {}
+  mounted() {
+      axios.get("http://api.xuandan.com/DataApi/PyqGoods?AppKey=tehahusnxb&type=2").then(res=>{
+       console.log(res.data)
+     })
+  }
   //路由退出时候调用
   //beforeRouteLeave(to, from, next){next()}
 };
