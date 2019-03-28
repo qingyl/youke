@@ -77,6 +77,9 @@ export default {
     .goods-group {
       .goods-item {
         margin: 0.5rem 0;
+        &:last-child{
+           margin-bottom:0;
+        }
         .goods-item-content {
           .goods-count{
              display: flex;
