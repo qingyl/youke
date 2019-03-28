@@ -32,8 +32,38 @@ axios.defaults.withCredentials = true;
 // 以上是axios的配置
 
 // 爆款
-const PyqGoodsUrl = `DataApi/PyqGoods`;
+const PyqGoodsUrl = "DataApi/PyqGoods";
 
 export const PyqGoods = res => {
     return ajaxGet(PyqGoodsUrl, res);
+};
+
+// 普通商品 
+const indexGoodsUrl ='DataApi/index';
+export const indexGoods = res => {
+    return ajaxGet(indexGoodsUrl, res);
+};
+
+// 单品详情
+const itemdetailUrl ="DataApi/item"
+export const itemdetail = res => {
+    return ajaxGet(itemdetailUrl, res);
+};
+
+// 佣金排行
+const rankListUrl="DataApi/RankList";
+export const rankList = res => {
+    return ajaxGet(rankListUrl, res);
+};
+
+// 选单预告
+const hotGoodsUrl="DataApi/HotGoods";
+export const hotGoods = res => {
+    return ajaxGet(hotGoodsUrl, res);
+};
+
+// 微信文案
+const getGoodsPyqUrl="DataApi/GetGoodsPyq"
+export const getGoodsPyq = res => {
+    return ajaxGet(getGoodsPyqUrl, res);
 };

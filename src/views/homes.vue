@@ -1,6 +1,7 @@
 <template>
 <!-- 首页 -->
   <div class="youke home">
+    
     <Tabbar></Tabbar>
   </div>
 </template>
