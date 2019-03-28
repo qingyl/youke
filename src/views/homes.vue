@@ -1,11 +1,12 @@
 <template>
-  <div class="home">
+<!-- 首页 -->
+  <div class="youke home">
     <Tabbar></Tabbar>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-import { PyqGoods } from "@/api";
+
 export default {
   //接收父级传递的参数
   props: [],
@@ -18,7 +19,7 @@ export default {
   beforeCreate() {},
   //实例化之后触发事件
   created() {
-    this.getList();
+
   },
   //实时监控data参数数据变化
   computed: {},
@@ -26,11 +27,7 @@ export default {
   components: {},
   //执行方法
   methods: {
-    getList() {
-      PyqGoods({type:2,pagesize:100}).then(res=>{
-          console.log(res.data);
-      });
-    }
+   
   },
   mounted() {
     // axios

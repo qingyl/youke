@@ -1,9 +1,8 @@
 <template>
- <van-nav-bar
- fixed
-  :title="$route.meta.name"
-  class="navs"
-/>
+<!--高佣金 -->
+ <div class="brokerage">
+ <Tabbar></Tabbar>
+ </div>
 </template>
 
 <script type="text/ecmascript-6">

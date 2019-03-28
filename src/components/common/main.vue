@@ -1,11 +1,22 @@
 <template>
-  <div class></div>
+  <div class="youke-main" :class="{'youke-main-pt':pt,'youke-main-pb':pb}">
+    <slot name="main"></slot>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
 export default {
   //接收父级传递的参数
-  props: [],
+  props:{
+    pt:{
+      type:Boolean,
+      default:false
+    },
+    pb:{
+      type:Boolean,
+      default:false
+    }
+  },
   //监听数据变化
   watch: {},
   data() {

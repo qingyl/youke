@@ -1,9 +1,8 @@
 <template>
- <van-nav-bar
- fixed
-  :title="$route.meta.name"
-  class="navs"
-/>
+<!-- 高销量 -->
+ <div class="">
+ <Tabbar></Tabbar>
+ </div>
 </template>
 
 <script type="text/ecmascript-6">

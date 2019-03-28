@@ -1,9 +1,8 @@
 <template>
- <van-nav-bar
- fixed
-  :title="$route.meta.name"
-  class="navs"
-/>
+<!--近期 -->
+ <div class="future">
+ <Tabbar></Tabbar>
+ </div>
 </template>
 
 <script type="text/ecmascript-6">
