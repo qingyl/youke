@@ -29,9 +29,9 @@
         "style-resources-loader": "^1.2.1"
     },
     "eslintConfig": {
-        "root": true,
+        "root": false,
         "env": {
-            "node": true
+            "node": false
         },
         "extends": [
             "plugin:vue/essential",
