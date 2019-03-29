@@ -1,5 +1,5 @@
 <template>
-  <van-tabbar v-model="active" fixed :zIndex="10">
+  <van-tabbar v-model="active" fixed :zIndex="100">
     <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
     <van-tabbar-item icon="search" to="/sales">高销量</van-tabbar-item>
     <van-tabbar-item icon="friends-o" to="/explos">爆款</van-tabbar-item>

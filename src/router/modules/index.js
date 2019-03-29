@@ -46,5 +46,14 @@ export const routes = [{
             name: '爆款',
             tabbars: 2
         }
+    },
+    {
+        path: "/search",
+        name: "search",
+        component: () =>
+            import ("components/search.vue"),
+        meta: {
+            name: '爆款',
+        }
     }
 ];

@@ -1,39 +1,22 @@
 <template>
-  <div id="app">
-    <transition :name="animateName">
-      <router-view
-        class="views"
-        v-title
-        :data-title="$route.meta.name"
-      />
-    </transition>
-
+  <div id="app" class="youke">
+   
+    <router-view v-title :data-title="$route.meta.name"/>
+    <Tabbar v-if="hideRoute"></Tabbar>
   </div>
 </template>
 <script type="text/ecmascript-6">
 export default {
-  watch: {
-    $route(to, from) {
-      const prevPath = from.path;
-      const nextPath = to.path;
-      // for(let item of this.pathList.values()){
-
-      // }
-      const prevIndex = this.pathList.find(val => prevPath === val); //前一个路由的索引
-      // const nextIndex = this.pathList.findIndex(val => nextPath === val); //当前点击路由的索引
-      // if (prevIndex > nextIndex) {
-      //   this.animateName = "slide-left";
-      // } else {
-      //   this.animateName = "slide-right";
-      // }
-    }
-  },
   data() {
     return {
-      animateName:"slide-left",
-      pathList:[]
-    }
+      pathList: ["/", "/sales", "/explos", "/brokerage", "/future"]
+    };
   },
+  computed: {
+    hideRoute() {
+      return this.pathList.includes(this.$route.path);
+    }
+  }
 };
 </script>
 <style lang="less">
@@ -50,21 +33,6 @@ export default {
 html,
 body {
   width: 100%;
-  height: 100%;
-}
-.views {
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-.slide-left-enter,
-.slide-right-leave-active {
-  opacity: 0;
-  -webkit-transform: translate(50px, 0);
-  transform: translate(50px, 0);
-}
-.slide-left-leave-active,
-.slide-right-enter {
-  opacity: 0;
-  -webkit-transform: translate(-50px, 0);
-  transform: translate(-50px, 0);
+  // height: 100%;
 }
 </style>

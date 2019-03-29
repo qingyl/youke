@@ -3,6 +3,7 @@
  fixed
   :title="$route.meta.name"
   class="navs"
+  :zIndex="100"
 />
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <!-- 爆款 -->
   <div class="youke explos">
-    <Navs/>
+ <Navs/>
     <Main>
       <div slot="main" class="view">
         <div class="goods-group">
@@ -26,7 +26,6 @@
         </div>
       </div>
     </Main>
-    <Tabbar></Tabbar>
   </div>
 </template>
 

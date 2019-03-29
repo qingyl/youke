@@ -2,17 +2,27 @@
   position: absolute;
   width: 100%;
   top: 0px;
+  left: 0;
+  z-index: 1;
   .navs{
     background: #f6f6f6;
   }
   .youke-main{
      padding-top:2.875rem;
-     padding-bottom: 3.125rem;
+     margin-bottom: 3.125rem;
+     position: relative;
      &.youke-main-pt{
       padding-top:0;
      }
      &.youke-main-pb{
-      padding-bottom:0;
+      margin-bottom:0;
      }
   }
+}
+.claer{
+  content: '';
+  display: table;
+  clear: both;
+  width: 0;
+  height: 0;
 }

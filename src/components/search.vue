@@ -1,7 +1,6 @@
 <template>
-<!--近期 -->
- <div class="future">
-     <Navs/>
+ <div class="youke-search youke">
+     <router-link to="/explos">shou</router-link>
  </div>
 </template>
 

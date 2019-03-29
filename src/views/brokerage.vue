@@ -1,7 +1,7 @@
 <template>
 <!--高佣金 -->
  <div class="brokerage">
- <Tabbar></Tabbar>
+     <Navs/>
  </div>
 </template>
 

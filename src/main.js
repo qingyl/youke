@@ -7,6 +7,7 @@ import "vant/lib/index.css";
 import "@/common/rem";
 import "@/assets/style.less"
 import clipboardCopy from "clipboard-copy";
+import "@/assets/icon/iconfont.css"
 Vue.prototype.$copy = clipboardCopy;
 Vue.use(Vant);
 Vue.component("Navs", () =>
