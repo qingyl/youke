@@ -2,7 +2,7 @@
   <div id="app" class="youke">
    
     <router-view v-title :data-title="$route.meta.name"/>
-    <Tabbar v-if="hideRoute"></Tabbar>
+
   </div>
 </template>
 <script type="text/ecmascript-6">
@@ -24,7 +24,7 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #dedede;
+
 }
 * {
   margin: 0;

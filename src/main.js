@@ -2,7 +2,8 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router/index";
 import store from "./store/index";
-import Vant from "vant";
+import Vant, { Lazyload } from "vant";
+Vue.use(Lazyload);
 import "vant/lib/index.css";
 import "@/common/rem";
 import "@/assets/style.less"

@@ -2,6 +2,7 @@
 <!--近期 -->
  <div class="future">
      <Navs/>
+       <Tabbar></Tabbar>
  </div>
 </template>
 

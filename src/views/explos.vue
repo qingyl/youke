@@ -26,6 +26,7 @@
         </div>
       </div>
     </Main>
+      <Tabbar></Tabbar>
   </div>
 </template>
 
@@ -73,6 +74,7 @@ export default {
 <style scoped lang="less">
 .explos {
   .view {
+      background: #dedede;
     .goods-group {
       .goods-item {
         margin: 0.5rem 0;

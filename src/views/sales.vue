@@ -2,6 +2,7 @@
   <!-- 高销量 -->
   <div class>
     <Navs/>
+      <Tabbar></Tabbar>
   </div>
 </template>
 
