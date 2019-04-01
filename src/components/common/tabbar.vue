@@ -4,7 +4,7 @@
     <van-tabbar-item icon="search" to="/sales">高销量</van-tabbar-item>
     <van-tabbar-item icon="friends-o" to="/explos">爆款</van-tabbar-item>
     <van-tabbar-item icon="setting-o" to="/brokerage">高佣金</van-tabbar-item>
-     <van-tabbar-item icon="setting-o" to="/future">近期</van-tabbar-item>
+     <!-- <van-tabbar-item icon="setting-o" to="/future">近期</van-tabbar-item> -->
   </van-tabbar>
 </template>
 

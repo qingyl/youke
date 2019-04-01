@@ -85,9 +85,6 @@ export default {
     }
   },
   mounted() {
-     this.$nextTick(_=>{
-        this.$refs.search.focus()
-     })
   }
   //路由退出时候调用
   //beforeRouteLeave(to, from, next){next()}
